@@ -73,7 +73,7 @@ After Augmentation the data looks as follows:
 
 
 <div align="center">
-  <img src="./augmentation.jpg" alt="Data Augmentation">
+  <img src="./figures/augmentation.jpg" alt="Data Augmentation">
 </div>
 
 
@@ -107,10 +107,10 @@ errors the model makes.
 <table style="width: 90%; table-layout: fixed;">
   <tr>
     <td align="center">
-      <img src="./smoking.jpg" alt="Smoking" width="300">
+      <img src="./figures/smoking.jpg" alt="Smoking" width="300">
     </td>
     <td align="center">
-      <img src="./nonsmoking.jpg" alt="After" width="300">
+      <img src="./figures/nonsmoking.jpg" alt="After" width="300">
     </td>
   </tr>
   <tr>
@@ -140,7 +140,7 @@ Specifically, ResNet and MobileNet showed significant gains in accuracy and F1 s
 
 
 <div align="center">
-  <img src="./confusion_matrix_1.jpg" alt="Confusion Matrix without Data Augmentation">
+  <img src="./figures/confusion_matrix_1.jpg" alt="Confusion Matrix without Data Augmentation">
 </div>
 
 ## After Augmentation
@@ -153,7 +153,7 @@ Specifically, ResNet and MobileNet showed significant gains in accuracy and F1 s
 
 
 <div align="center">
-  <img src="./confusion_matrix_2.jpg" alt="Confusion Matrix after Data Augmentation">
+  <img src="./figures/confusion_matrix_2.jpg" alt="Confusion Matrix after Data Augmentation">
 </div>
 
 
@@ -170,7 +170,7 @@ Therefore, another test was conducted on the ResNet model by making minimal modi
 
 
 <div align="center">
-  <img src="./resnet_confusion_matrix.jpg" alt="Resnet Confusion Matrix">
+  <img src="./figures/resnet_confusion_matrix.jpg" alt="Resnet Confusion Matrix">
 </div>
 
 The metrics highlight a well-balanced and high-performing model. The accuracy, precision, recall, and F1 score are all consistently above 92%, showcasing ResNet's ability to correctly identify both positive and negative instances. The confusion matrix provides a visual representation of ResNet's performance. Out of 120 "notsmoking" images, ResNet correctly identified 111 and misclassified 9. For the "smoking" images, it correctly identified 109 out of 120, with 11 misclassifications.
@@ -178,16 +178,9 @@ The metrics highlight a well-balanced and high-performing model. The accuracy, p
 
 # Discussion
 
-The results suggest that ResNet's performance (in addition to EfficientNet) can continue to
-improve with further data images and fine-tuning. By adding more diverse and representative
-images, ResNet can enhance its ability to generalize, reducing the rates of misclassification even
-further.
+The results suggest that ResNet's performance (in addition to EfficientNet) can continue to improve with further data images and fine-tuning. By adding more diverse and representative images, ResNet can enhance its ability to generalize, reducing the rates of misclassification even further.
 
-In general, data augmentation had a positive impact on the performance of the machine learning
-models. By increasing the variety and amount of training data, augmentation improved the
-evaluation metrics of most models. It is evident that by augmenting the dataset, we were able to
-provide the models with more diverse examples, which helped them generalize better to unseen
-data. This led to improved accuracy, precision, recall, and other evaluation metrics. 
+In general, data augmentation had a positive impact on the performance of the machine learning models. By increasing the variety and amount of training data, augmentation improved the evaluation metrics of most models. It is evident that by augmenting the dataset, we were able to provide the models with more diverse examples, which helped them generalize better to unseen data. This led to improved accuracy, precision, recall, and other evaluation metrics. 
 
 
 
