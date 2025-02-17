@@ -107,10 +107,10 @@ errors the model makes.
 <table style="width: 90%; table-layout: fixed;">
   <tr>
     <td align="center">
-      <img src="./smoking.jpg" alt="Smoking" width="478.5">
+      <img src="./smoking.jpg" alt="Smoking" width="300">
     </td>
     <td align="center">
-      <img src="./nonsmoking.jpg" alt="After" width="478.5">
+      <img src="./nonsmoking.jpg" alt="After" width="300">
     </td>
   </tr>
   <tr>
