@@ -7,7 +7,8 @@ learning solutions to ensure better performance and results.
 
 # Data Exploration and Visualization
 
-Our dataset is “Khan, Ali (2020)”. The dataset contains a total of 2,400 raw images.
+Our dataset, "Khan, Ali (2020)," consists of a total of 2,400 raw images.
+
 The dataset contains a total of 2,400 raw images:
 • 1,200 images in the smoking (smokers) category
 • 1,200 images in the not-smoking (non-smokers) category.
@@ -131,9 +132,12 @@ Specifically, ResNet and MobileNet showed significant gains in accuracy and F1 s
 
 ## Before Augmentation
 
-<div align="center">
-  <img src="./comparison1.jpg" alt="Comparison without Data Augmentation">
-</div>
+| Model                         | Accuracy | Precision | Recall  | F1 Score | Specificity | FPR    | FNR    | PPV      | NPV      | MCC     | Youden's J | Markedness |
+|--------------------------------|----------|-----------|---------|----------|-------------|--------|--------|----------|----------|---------|------------|------------|
+| ResNet_No_Augmented           | 0.8375   | 0.858434  | 0.8375  | 0.835092 | 0.958333    | 0.041667 | 0.283333 | 0.945055 | 0.771812 | 0.695619 | 0.795833   | 0.716867   |
+| EfficientNet_No_Augmented     | 0.8875   | 0.887742  | 0.8875  | 0.887482 | 0.875000    | 0.125000 | 0.100000 | 0.878049 | 0.897436 | 0.775242 | 0.762500   | 0.775485   |
+| MobileNet_No_Augmentation     | 0.8125   | 0.822373  | 0.8125  | 0.811053 | 0.900000    | 0.100000 | 0.275000 | 0.878788 | 0.765957 | 0.634796 | 0.712500   | 0.644745   |
+
 
 <div align="center">
   <img src="./confusion_matrix_1.jpg" alt="Confusion Matrix without Data Augmentation">
@@ -141,9 +145,12 @@ Specifically, ResNet and MobileNet showed significant gains in accuracy and F1 s
 
 ## After Augmentation
 
-<div align="center">
-  <img src="./comparison2.jpg" alt="Comparison after Data Augmentation">
-</div>
+| Model                   | Accuracy  | Precision | Recall   | F1 Score  | Specificity | FPR     | FNR     | PPV      | NPV      | MCC      | Youden's J | Markedness |
+|-------------------------|-----------|-----------|----------|-----------|-------------|---------|---------|----------|----------|----------|------------|------------|
+| ResNet_Augmented       | 0.895833  | 0.896081  | 0.895833 | 0.895817  | 0.883333    | 0.116667 | 0.091667 | 0.886179 | 0.905983 | 0.791914 | 0.779167   | 0.792162   |
+| EfficientNet_Augmented | 0.895833  | 0.897185  | 0.895833 | 0.895745  | 0.925000    | 0.075000 | 0.133333 | 0.920354 | 0.874016 | 0.793017 | 0.820833   | 0.794370   |
+| MobileNet_Augmented    | 0.858333  | 0.858433  | 0.858333 | 0.858323  | 0.850000    | 0.150000 | 0.133333 | 0.852459 | 0.864407 | 0.716766 | 0.708333   | 0.716866   |
+
 
 <div align="center">
   <img src="./confusion_matrix_2.jpg" alt="Confusion Matrix after Data Augmentation">
@@ -157,9 +164,10 @@ The improvement observed in ResNet through data augmentation clearly indicates t
 Therefore, another test was conducted on the ResNet model by making minimal modifications to the learning rate and the number of epochs. Below are the latest results for the modified ResNet model.
 
 
-<div align="center">
-  <img src="./resnet_metrics.jpg" alt="Resnet Metrics">
-</div>
+| Model         | Accuracy  | Precision | Recall   | F1 Score  | Specificity | FPR     | FNR     | PPV      | NPV      | MCC      | Youden's J | Markedness |
+|--------------|-----------|-----------|----------|-----------|-------------|---------|---------|----------|----------|----------|------------|------------|
+| ResNet_Final | 0.920833  | 0.921097  | 0.920833 | 0.920821  | 0.908333    | 0.091667 | 0.066667 | 0.910569 | 0.931624 | 0.841930 | 0.829167   | 0.842193   |
+
 
 <div align="center">
   <img src="./resnet_confusion_matrix.jpg" alt="Resnet Confusion Matrix">
