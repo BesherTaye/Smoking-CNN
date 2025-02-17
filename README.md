@@ -1,4 +1,4 @@
-# Cigarette_Detection-Computer_Vision
+# Smoking Behavior Detection
 
 Cigarette detection in photos and videos continues to be a challenging task in computer vision, having major applications in behavior analysis, public health, and security services. In order to address the inherent challenges of this issue, this research presents a novel approach for offline cigarette detection. 
 
